@@ -1,0 +1,321 @@
+/* incluindo googlefonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    
+    font-family: "Montserrat", sans-serif;
+    background-color: #fff;
+    color: #ddd;
+    font-size: 1.0em; 
+    line-height: 1.4; /*espaçamento entre linhas*/
+    padding-top: 180px;
+}   
+
+a {
+    text-decoration: none;
+}
+
+#cabecalho{
+    background-color: #042608; /*cor do fundo do elemento*/
+    display: flex; /*joga pra cima os elementos dentro deste-fluido*/
+    justify-content: space-between; 
+    align-items:flex-end; 
+      position: fixed; 
+    top: 0;          
+    width: 100%; /*posição onde está escrito home sobre mim projetos*/
+    height: 180px; /*tamanho da parte verde*/ 
+    z-index: 1000px; 
+}
+
+#logo img { /*é a minha foto que parece de túmulo*/
+    width: 150px;  
+    height: 150px;  
+    border-radius: 50%; /*é porcentagem*/ 
+    margin-top: 20px;
+    margin-left: 40px;
+    max-width: 26vh;   
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /*é a distancia do home sobre mim projetos*/
+    font-size: 1.2em;
+    padding-right: 30px;
+    padding-bottom: 10px; 
+}
+#menu a{
+    color: chocolate; 
+}
+#menu a:hover {
+    color: #fff;
+}
+
+#home, #sobreMim, #projetos{
+    scroll-margin-top: 150px;
+    padding: 40px;
+}
+
+#home{
+    background-image: url('../imagens/1044950366.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 90px; 
+    min-height: 90vh;
+}
+
+#home p{
+    font-family: "Roboto", sans-serif;
+    width: 50%; /*largura do elemento-caixa verde -aqui é um parágrafo*/
+    max-width: 1200px;
+    padding: 30px;
+    border-radius: 7px;
+    text-align: center;
+    background-color: #042608; 
+    color: #fff;
+    opacity: 85%;
+}
+#sobreMim{
+    margin:  0 auto;
+    width: 90%;
+    background-color: #ffffff;
+    color: #333; /*cor da letra dos projeto*/
+    padding-top: 60px;
+    height: 100vh;
+}
+#sobreMim h1{
+    margin-bottom: 20px;
+}
+#sobreMim .personalizado{
+    font-weight: 700;
+    font-size: 1.0em;
+}
+
+#sobreMim .curriculo{
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 0.9em;
+}
+
+#sobreMim .descricao{
+    margin-top: 30px; 
+}
+#sobreMim #sobreMimContainer{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    margin-right: 10px;  
+    /*border: 1px solid red;*/ 
+    margin-bottom: 50px;
+}
+#sobreMim #sobreMimContainer img{
+    width: 35vh;
+    border-radius: 50%;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.35);
+}
+#sobreMim #sobreMimContainer p{
+    text-align: justify;
+}
+#sobreMim .habilidade{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: 10px; 
+}
+#sobreMim .habilidade article{
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.35);
+    flex: 1 1 200px;
+    max-width: 22%;
+    text-align: center;
+    border-radius: 10px 0px 10px 0;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+#sobreMim .habilidade article:hover{
+    transform: scale(1.03);
+    border-color: #042608;
+}
+#sobreMim .habilidade img{
+    width: 10vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#sobreMim .habilidade h3{
+font-size: 1.0em;
+margin-top: 10px;
+
+text-align: center;
+
+}
+#projetos{
+    background-color: burlywood;
+    color: #1b0606;  
+    padding-top: 60px;
+    text-align: center;
+    height: 100vh;
+}
+
+#projetos, #projetoCabecalho h1{
+    margin-bottom: 30px;
+}
+#listaprojetos{
+    display: flex;
+    flex-wrap: wrap;/*permite que os elementos quebrem a linha*/
+    justify-content: space-around;
+}
+#listaprojetos article{
+    margin-top: 30px;
+    border: 1px solid #333;
+    border-radius: 7px;
+    padding: 15px;
+    width: 20%;
+    box-shadow: 0 2px 4px 2px #333;
+    text-align: left;
+}
+
+#listaprojetos article:hover{
+    transform: scale(1.03);
+    border-color: #042608;
+}
+
+#listaprojetos article img{
+    width: 100%;
+    border-radius: 7px; /*bordas das caixas dos projetos*/ 
+}
+#listaprojetos article h2{
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+#projetos article p{
+    text-align: justify;
+    margin-bottom: 5px;
+}
+#projetos article a{ 
+    color: #d87a0e;
+    font-weight: bold;
+    font-size: 1em;
+    border-left: 5px solid #521a1a57;
+    padding-left: 5px;
+}
+#projetos article a:hover{
+    color: blue;
+}
+#contato{
+    width: 100%;
+    background-color: #fff;
+    scroll-margin-top: 150px;
+    min-height: 70vh;
+    padding-top: 40px;
+}
+#contato .container{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+#contato .container h1{
+    margin-bottom: 30px;
+    color: #333;
+}
+#contato .formulario{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 50%;
+}
+
+#contato .formulario p{
+    text-align: justify;
+    color: #333;
+    margin-bottom: 20px;
+}
+#contato .maisContato h2{
+    font-size: 1.05em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #111;
+}
+#contato .maisContato .detalhe{
+    font-size: 1.0em;
+    margin: 0;
+    color: #111;
+}
+
+#contato .formulario input{
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 45px;
+    padding: 5px;
+    font-size: 1.05em;
+    border: 1px solid #333;
+}
+#contato .formulario button{
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    font-size: 1.05em;
+    font-weight: bold;
+    font-family: "Roboto";
+    background-color: #042608;
+    color: #fff;
+    border-radius: 10px;
+}
+#contato .formulario input:focus{
+    border-color: 5px solid #ea2a15;
+}
+#contato .container .mapa{
+    width: 45%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 20px; 
+    
+}
+#footer {
+    background-color: #042608;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 150px;  
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#footer, #copy{
+    text-align: center;
+}
+
+#footerMenu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+#footerMenu ul a{
+    font-family: "Montserrat", sans-serif;
+    color: white; 
+    font-size: 1.0em;  
+}
+#footerMenu a:hover {
+    color: #d5e777;
+}
+
+#footer #redesSociais img{
+    width: 35px;
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    border-radius: 70px;
+    margin-left: 5px;
+    padding: 5px;
+}

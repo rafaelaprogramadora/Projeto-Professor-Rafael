@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rafaela Alves</title>
+
+        <link href="./css/root.css" rel="stylesheet">
+        <link href="./css/estilo.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- comentário -->
+    <header id="cabecalho">
+        <div id="logo">
+            <figure>
+                <img src="./imagens/foto1.jpeg" alt="Foto perfil Rafaela Alves" 
+                title="Foto perfil Rafaela Alves">
+            </figure>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href = "#home">Home</a></li>
+                <li><a href = "#sobreMim">Sobre mim</a></li>
+                <li><a href = "#projetos">Projetos</a></li>
+                <li><a href = "#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+     <main>
+        <div id="home">
+             <!-- colocar uma imagem grande como background-->
+             <p>
+                “A mente que se abre a uma nova ideia jamais voltará ao seu tamanho original.” Albert Einstein
+             </p>
+        </div>
+        <section id="sobreMim">
+            <header>
+                <h1>Sobre Mim</h1>
+            </header>
+            <div id="sobreMimContainer">
+                <div>
+                    <p class="personalizado">Olá, eu sou a Rafaela :)</p>
+                    <p class="curriculo">Aluna de Ti: Desenvolvimento WEB</p>
+                    <p class="descricao">
+                        Sou formada em Direito pela Faculdade Metropolitana de Maringá, e recentemente decidi seguir um novo caminho profissional. Sempre fui apaixonada por tecnologia, embora por muito tempo tenha acreditado que meu lugar não era na área de T.I. Hoje, essa visão mudou completamente. Estou cursando minha segunda graduação em Análise e Desenvolvimento de Sistemas pelo Senac e me redescobrindo profissionalmente. Iniciei essa nova jornada com entusiasmo e determinação, apostando alto em uma carreira que me instiga, me desafia e me motiva a aprender todos os dias. Acredito que nunca é tarde para recomeçar — especialmente quando se trata de seguir algo que faz sentido de verdade. Estou construindo meu espaço na tecnologia com a bagagem que trago do Direito e a mente aberta para o novo.
+                    </p>
+                </div>
+            </div>
+
+            <h2>Habilidades</h2>        
+            <div class="habilidade">    
+                <article>
+                    <header><h3>HTML</h3></header>
+                    <figure>
+                        <img src="./imagens/html.png"> 
+                    </figure>
+                </article>
+                <article>
+                    <header><h3>CSS3</h3></header>
+                    <figure>
+                        <img src="./imagens/css.png">  
+                    </figure>
+                </article>
+                <article>
+                    <header><h3>JavaScript</h3></header>
+                    <figure>
+                        <img src="./imagens/javascript.png">
+                    </figure>
+                </article>
+                
+                <article>
+                    <header><h3>PHP</h3></header>
+                    <figure>
+                        <img src="./imagens/php.png"> 
+                    </figure>
+                </article>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <header id="projetoCabecalho">
+                <h1>Projetos</h1> 
+            </header>
+            <p>Meus projetos refletem a união entre teoria e prática, transformando ideias em soluções de software funcionais.</p>
+            
+            <!-- incluir uma div revestindo os articles e colocar como classe portifolios-->
+          
+          <div id="listaprojetos"> 
+            <article>
+                <header>
+                    <figure>
+                        <img src="./imagens/googleads.webp" alt="Projeto 1" title="Projeto 1">
+                    </figure>
+                    <h2>Google Ads</h2> 
+                </header>
+                    <!--Breve descrição do projeto.-->
+                    <p>Aprendi a criar e gerenciar campanhas de anúncios pagos, segmentando públicos e analisando métricas para potencializar resultados de marketing.</p>
+                    <a href="#">Ver mais detalhes</a>
+            </article>
+
+            <article>
+                <header>
+                    <figure>
+                        <img src="./imagens/face.instagran.jpg" alt="Projeto 2" title="Projeto2">
+                    </figure>
+                    <h2>Facebook Ads/Instagram Ads</h2>
+                </header>
+                    <!--Breve descrição do projeto.-->
+                    <p>Desenvolvi habilidades para planejar e executar campanhas em redes sociais, utilizando estratégias de segmentação e análise de desempenho para alcançar diferentes objetivos de negócio.</p>
+                <a href="#">Ver mais detalhes</a>
+            </article>
+
+            <article>
+                <header>
+                    <figure>
+                        <img src="./imagens/marketing1.webp" alt="Projeto 3" title="Projeto 3">
+                    </figure>
+                    <h2>Marketing Digital</h2>
+                </header>
+                    <!--Breve descrição do projeto.-->
+                    <p>Conhecimento em estratégias online como SEO, e-mail marketing, funil de vendas e inbound marketing, com foco em aumentar a presença e autoridade digital.</p>  
+                    <a href="#">Ver mais detalhes</a>
+            </article>
+
+            <article>
+                <header>
+                    <figure>
+                        <img src="./imagens/dev2 (1).jpg" alt="Projeto 1" title="Projeto 1">
+                    </figure>
+                    <h2>Desenvolvimento Web</h2>
+                </header>
+                    <!--Breve descrição do projeto.-->
+                    <p>Formação em construção de sites e aplicações web, abordando linguagens como HTML, CSS e JavaScript, além de boas práticas de usabilidade e design responsivo.</p>
+                    <a href="#">Ver mais detalhes</a>
+            </article>
+        </div><!-- fechando o div portifólios-->
+        </section>
+
+        <section id="contato">
+            
+            <div class="container">
+                <div class="formulario"><header>
+                <h1>Contato</h1>
+            </header> 
+                    <p>Gostou do meu trabalho ou tem alguma dúvida? Fique à vontade para entrar em contato! Será um prazer conversar com você.</p>
+                    <form>
+                        <input type="text" placeholder="Informe o seu nome">
+                        <input type="email" placeholder="Informe o seu e-mail">
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <div class="maisContato">
+                        <h2>Entre em contato também pelos números</h2>
+                        <p class="detalhe"> Telefones para contato: (44) 99747-1142</p>
+                        <p class="detalhe">Av. Colombo, 6225 - Zona 7, Maringá - PR, 87020-000</p>                    </div>
+                </div>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.3542038517567!2d-51.94289702549371!3d-23.411568756104536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd6d3fcba7427%3A0x92a4207f682ee56f!2sFaculdade%20Senac%20Maring%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1754751779870!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div id="footerMenu">
+            <ul>
+                <li><a href = "#home">Home</a></li>
+                <li><a href = "#sobreMim">Sobre mim</a></li>
+                <li><a href = "#projetos">Projetos</a></li>
+            </ul>
+        </div>
+        
+        <div id="copy">Desenvolvido por Rafaela Alves Barbosa - 2025<br>Faculdade Senac</div>
+        <div id="redesSociais">
+            <a href="#"><img src="./imagens/icons8-instagram-50.png"></a>
+            <a href="#"><img src="./imagens/icons8-tiktok-50.png"></a>
+            <a href="#"><img src="./imagens/icons8-facebook-50.png"></a>
+            <a href="#"><img src="./imagens/icons8-github-50.png"></a>  
+        </div>
+    </footer>
+</body>
+</html>
